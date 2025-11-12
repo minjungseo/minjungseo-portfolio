@@ -1,0 +1,165 @@
+/* 1. 기본 스타일 및 폰트 설정 */
+body {
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. 헤더 스타일링: 투명 배경, 상단 고정, 패딩 축소 */
+header {
+    background-color: transparent;
+    color: #333;
+    padding: 10px 0;
+    
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+/* src/index.css 파일의 아무 곳에 추가 */
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+/* Contact 페이지 전용 다크 모드 스타일 */
+.contact-dark {
+    background-color: #000000 !important;
+    color: #ffffff !important; 
+}
+
+/* 다크 모드일 때 특정 요소의 폰트 색상 및 언더라인 색상 강제 지정 */
+.contact-dark a {
+    color: #ffffff !important; /* 링크 폰트 색상 흰색 */
+    /* ⭐⭐⭐ 이 부분을 수정/추가합니다. ⭐⭐⭐ */
+    border-color: #ffffff !important; /* 밑줄(border-bottom) 색상 흰색 */
+}
+
+/* ⭐⭐ 추가: 다크 모드일 때 헤더 메뉴 호버 색상 강제 적용 ⭐⭐ */
+.contact-dark header nav a:hover {
+    /* 기존 호버 색상인 #b5b5b5를 !important로 강제하여 흰색(#ffffff)을 덮어씁니다. */
+    color: #b5b5b5 !important;
+}
+
+
+/* 헤더 전체 컨테이너 설정 */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 메뉴 (nav) 스타일 */
+header nav a {
+    color: #333; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: color 0.3s ease; 
+}
+
+/* 메뉴 호버 시 폰트 색상 변경 */
+header nav a:hover {
+    color: #b5b5b5; 
+}
+
+
+/* 3. 섹션 스타일 및 레이아웃 무너짐 방지 */
+section {
+    padding: 0;
+    min-height: 10vh;
+}
+
+/* section#about: 고정된 헤더 공간 확보 */
+section#about {
+    min-height: 50px; 
+    padding: 0; 
+}
+
+/* Contact 섹션의 패딩 축소 */
+section#contact {
+    padding: 20px; 
+    padding-bottom: 50px; 
+}
+
+section#projects {
+    padding-top:20px; 
+    padding-bottom: 20px;
+}
+
+/* 4. 그리드 레이아웃 구현 (세로 4 : 가로 3 비율 적용) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    width: 100%;
+    /* max-width: 1400px; */
+    margin: 0 auto;
+}
+
+/* 그리드 항목으로 사용된 <a> 태그의 기본 스타일 초기화 */
+.grid-container a.grid-item {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Grid 항목 스타일 (세로 4 : 가로 3 비율 적용) */
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 133.33%; /* 세로 4 : 가로 3 비율 (패딩 핵) */
+    display: block; /* a 태그를 블록 요소로 */
+}
+
+.grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* 마우스 오버(Hover) 시 효과 */
+.grid-item:hover img {
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+/* 프로젝트 정보 스타일 */
+.project-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: none; 
+}
+
+/* 5. 푸터 스타일링: 고정 해제 */
+footer {
+    text-align: center;
+    padding: 10px; 
+    background-color: transparent; 
+    color: #b5b5b5; 
+    
+    font-size: 0.3em; 
+    letter-spacing: 0; 
+    font-weight: 300; 
+
+    position: static;
+}
