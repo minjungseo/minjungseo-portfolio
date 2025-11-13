@@ -27,7 +27,7 @@ const ContactPage = () => {
                     className="contact-image-banner"
                 />
                 
-                <p>Email: <a href="mailto:minjungseo01@email.com"> minjungseo01@email.com</a></p>
+                <p>Email: <a href="mailto:minjungseo01@gmail.com"> minjungseo01@gmail.com</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Profile</a></p>
                 <p>Instagram: <a href="https://www.instagram.com/joesarcv/?next=%2F" target="_blank">@joesarcv</a></p>
             </div>
