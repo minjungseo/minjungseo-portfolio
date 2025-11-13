@@ -26,9 +26,9 @@ const DetailPage = () => {
   return (
     <>
       <SEO 
-        title={`${project.title} - Minjung Seo`}
-        description={project.category}
-        keywords={project.type}
+        title="minjungseo"
+        description={project.title}
+        keywords={project.category}
       />
       <section className="project-detail">
           

@@ -11,7 +11,7 @@ const HomePage = () => {
     return (
         <>
             <SEO 
-                title="Minjung Seo's Portfolio"
+                title="minjungseo"
                 description="A portfolio of web development projects by Minjung Seo."
                 keywords="Minjung Seo, portfolio, designer"
             />

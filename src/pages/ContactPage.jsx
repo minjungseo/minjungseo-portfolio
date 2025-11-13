@@ -16,7 +16,7 @@ const ContactPage = () => {
     return (
         <>
             <SEO 
-                title="Contact - Minjung Seo"
+                title="minjungseo"
                 description="Contact information for Minjung Seo."
                 keywords="contact, email, linkedin, instagram"
             />
