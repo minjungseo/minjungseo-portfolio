@@ -6,9 +6,9 @@ export const PROJECTS_DATA = [
     id: 5, 
     title: "프로젝트 5: Graphic Illustration", 
     category: "Graphic", 
-    thumbnail: "/assets/5.png", 
+    thumbnail: "/assets/5.jpg", 
     content: { 
-      detailImages: ["/assets/detail/detail5.png"], 
+      detailImages: ["/assets/detail/detail5.jpg"], 
       keywords: ["Illustrator", "Vector Art", "Visual Communication"] 
     } 
   },
