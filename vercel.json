@@ -6,7 +6,6 @@
     "build": {
         "env": {
         "NODE_ENV": "production"
-        },
-        "outputDirectory": "dist"
+        }
     }
 }
