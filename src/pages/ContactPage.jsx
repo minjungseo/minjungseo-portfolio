@@ -21,7 +21,7 @@ const ContactPage = () => {
                 keywords="contact, email, linkedin, instagram"
             />
             <div className="contact-content">
-                <img 
+                <img
                     src="/assets/contact_banner.jpg" 
                     alt="Contact Page Banner" 
                     className="contact-image-banner"
