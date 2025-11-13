@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useProjects } from '../hooks/useProjects';
+import SEO from '../components/seo/Helmet';
 import '../styles/Home.css';
 
 const HomePage = () => {
@@ -9,6 +10,11 @@ const HomePage = () => {
 
     return (
         <>
+            <SEO 
+                title="Minjung Seo's Portfolio"
+                description="A portfolio of web development projects by Minjung Seo."
+                keywords="Minjung Seo, portfolio, designer"
+            />
             {/* Spacing for the header */}
             <section id="about" className="about-section"></section> 
 
