@@ -6,6 +6,7 @@ const Header = () => (
         <div className="header-container">
             <nav>
                 <Link to="/">PROJECT</Link> 
+                {/* <Link to="/about">ABOUT</Link>  */}
                 <Link to="/contact">CONTACT</Link>
             </nav>
         </div>

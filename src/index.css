@@ -22,21 +22,22 @@ header {
 
 /* src/index.css 파일의 아무 곳에 추가 */
 
+
 .no-scroll {
     overflow: hidden;
     height: 100vh;
 }
 /* Contact 페이지 전용 다크 모드 스타일 */
 .contact-dark {
-    background-color: #000000 !important;
-    color: #ffffff !important; 
+    background-color: white!important;
+    color: #333 !important; 
 }
 
 /* 다크 모드일 때 특정 요소의 폰트 색상 및 언더라인 색상 강제 지정 */
 .contact-dark a {
-    color: #ffffff !important; /* 링크 폰트 색상 흰색 */
+    color: #333 !important; /* 링크 폰트 색상 흰색 */
     /* ⭐⭐⭐ 이 부분을 수정/추가합니다. ⭐⭐⭐ */
-    border-color: #ffffff !important; /* 밑줄(border-bottom) 색상 흰색 */
+    border-color: #333 !important; /* 밑줄(border-bottom) 색상 흰색 */
 }
 
 /* ⭐⭐ 추가: 다크 모드일 때 헤더 메뉴 호버 색상 강제 적용 ⭐⭐ */
