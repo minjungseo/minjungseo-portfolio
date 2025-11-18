@@ -20,30 +20,54 @@ header {
     z-index: 1000; 
 }
 
-/* src/index.css 파일의 아무 곳에 추가 */
+nav a.active {
+    color: #b5b5b5; /* 강조하고 싶은 색상으로 변경하세요 (예: 파란색) */
+}
+
+/* 기본 링크 스타일 (active 클래스가 없을 때) */
+nav a {
+    text-decoration: none;
+    color: #333;
+    /*transition: color 0.3s ease; /* 부드러운 색상 전환 */
+}
 
 
 .no-scroll {
     overflow: hidden;
     height: 100vh;
 }
-/* Contact 페이지 전용 다크 모드 스타일 */
-.contact-dark {
+
+.about {
     background-color: white!important;
     color: #333 !important; 
 }
 
-/* 다크 모드일 때 특정 요소의 폰트 색상 및 언더라인 색상 강제 지정 */
-.contact-dark a {
-    color: #333 !important; /* 링크 폰트 색상 흰색 */
-    /* ⭐⭐⭐ 이 부분을 수정/추가합니다. ⭐⭐⭐ */
-    border-color: #333 !important; /* 밑줄(border-bottom) 색상 흰색 */
+/* src/components/AboutPage.css */
+
+/* 1. 전체 컨테이너 스타일: 중앙 정렬 및 가독성 확보 */
+.about-container {
+    max-width: 90%; /* 텍스트 가독성을 위한 최대 너비 설정 */
+    margin: 40px auto; /* 상하 여백 40px, 좌우 자동(중앙 정렬) */
+    padding: 0 40px; /* 양옆 패딩 (모바일 환경 고려) */
+    line-height: 1.2; /* 텍스트 줄 간격 */
 }
 
-/* ⭐⭐ 추가: 다크 모드일 때 헤더 메뉴 호버 색상 강제 적용 ⭐⭐ */
-.contact-dark header nav a:hover {
-    /* 기존 호버 색상인 #b5b5b5를 !important로 강제하여 흰색(#ffffff)을 덮어씁니다. */
-    color: #b5b5b5 !important;
+.about-container h1 {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.about-container p {
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 10px;
 }
 
 

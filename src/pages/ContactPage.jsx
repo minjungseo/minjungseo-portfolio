@@ -5,11 +5,11 @@ const ContactPage = () => {
     
     useEffect(() => {
         // When the Contact page is visible (on mount), add classes to the body
-        document.body.classList.add('no-scroll', 'contact-dark');
+        document.body.classList.add('no-scroll', 'contact');
 
         // When the Contact page is left (on unmount), remove the classes
         return () => {
-            document.body.classList.remove('no-scroll', 'contact-dark');
+            document.body.classList.remove('no-scroll', 'contact');
         };
     }, []); 
 
